@@ -1,0 +1,198 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec 29 19:30:47 2018
+# Process ID: 5040
+# Current directory: C:/Users/egeozanozyedek/Desktop/project_9
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4556 C:\Users\egeozanozyedek\Desktop\project_9\project_9.xpr
+# Log file: C:/Users/egeozanozyedek/Desktop/project_9/vivado.log
+# Journal file: C:/Users/egeozanozyedek/Desktop/project_9\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/egeozanozyedek/Desktop/project_9/project_9.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 814.508 ; gain = 142.777
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: main
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 963.012 ; gain = 106.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:14]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/debounce.vhd:3' bound to instance 'bounce' of component 'debounce' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/debounce.vhd:8]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/debounce.vhd:8]
+INFO: [Synth 8-3491] module 'vga_main' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:5' bound to instance 'vga' of component 'vga_main' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'vga_main' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:14]
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_sync.vhd:4' bound to instance 'controller' of component 'vga_sync' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_sync.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (2#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_sync.vhd:11]
+WARNING: [Synth 8-549] port width mismatch for port 'hcurrent': port width = 11, actual width = 32 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:19]
+WARNING: [Synth 8-549] port width mismatch for port 'vcurrent': port width = 10, actual width = 32 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:19]
+WARNING: [Synth 8-549] port width mismatch for port 'hcurrent': port width = 32, actual width = 11 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:35]
+WARNING: [Synth 8-549] port width mismatch for port 'vcurrent': port width = 32, actual width = 10 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:35]
+INFO: [Synth 8-3491] module 'level_draw' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:10' bound to instance 'drawer' of component 'level_draw' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'level_draw' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:19]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'divider' of component 'clock_divider' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (3#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:11]
+INFO: [Synth 8-3491] module 'rng' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/rng.vhd:4' bound to instance 'rdm' of component 'rng' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'rng' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/rng.vhd:12]
+WARNING: [Synth 8-6014] Unused sequential element tmp_reg was removed.  [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/rng.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'rng' (4#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/rng.vhd:12]
+INFO: [Synth 8-3491] module 'player' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/player.vhd:7' bound to instance 'ply' of component 'player' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'player' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/player.vhd:17]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'divider0' of component 'clock_divider' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/player.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'player' (5#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/player.vhd:17]
+WARNING: [Synth 8-549] port width mismatch for port 'cxpos': port width = 32, actual width = 11 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:93]
+WARNING: [Synth 8-549] port width mismatch for port 'cypos': port width = 32, actual width = 10 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:93]
+INFO: [Synth 8-3491] module 'enemy' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/enemy.vhd:7' bound to instance 'enm1' of component 'enemy' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'enemy' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/enemy.vhd:14]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'divider' of component 'clock_divider' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/enemy.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'enemy' (6#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/enemy.vhd:14]
+WARNING: [Synth 8-549] port width mismatch for port 'eposx': port width = 32, actual width = 11 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+WARNING: [Synth 8-549] port width mismatch for port 'eposy': port width = 32, actual width = 10 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+INFO: [Synth 8-3491] module 'projectile' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/projectile.vhd:6' bound to instance 'prj' of component 'projectile' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'projectile' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/projectile.vhd:17]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'divider' of component 'clock_divider' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/projectile.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'projectile' (7#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/projectile.vhd:17]
+WARNING: [Synth 8-549] port width mismatch for port 'pposx': port width = 32, actual width = 11 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:96]
+WARNING: [Synth 8-549] port width mismatch for port 'pposy': port width = 32, actual width = 10 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:96]
+WARNING: [Synth 8-6014] Unused sequential element points_reg was removed.  [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:171]
+INFO: [Synth 8-4471] merging register 'reset_e_reg' into 'reset_p_reg' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element reset_e_reg was removed.  [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+WARNING: [Synth 8-3848] Net rgb_o[18] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[17] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[16] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[14] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[13] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[12] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[11] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[10] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[9] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[7] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net difficulty in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:73]
+WARNING: [Synth 8-3848] Net enemy_type in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'level_draw' (8#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'vga_main' (9#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:14]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'clk' of component 'clock_divider' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:65]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/decoder.vhd:6' bound to instance 'd_0' of component 'decoder' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'decoder' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/decoder.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (10#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/decoder.vhd:11]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/decoder.vhd:6' bound to instance 'd_1' of component 'decoder' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:67]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/decoder.vhd:6' bound to instance 'd_2' of component 'decoder' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:68]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/decoder.vhd:6' bound to instance 'd_3' of component 'decoder' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:69]
+INFO: [Synth 8-3491] module 'ssd_sync' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/ssd_sync.vhd:4' bound to instance 'sync' of component 'ssd_sync' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'ssd_sync' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/ssd_sync.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ssd_sync' (11#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/ssd_sync.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'main' (12#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:14]
+WARNING: [Synth 8-3331] design player has unconnected port inx[31]
+WARNING: [Synth 8-3331] design player has unconnected port inx[30]
+WARNING: [Synth 8-3331] design player has unconnected port inx[29]
+WARNING: [Synth 8-3331] design player has unconnected port inx[28]
+WARNING: [Synth 8-3331] design player has unconnected port inx[27]
+WARNING: [Synth 8-3331] design player has unconnected port inx[26]
+WARNING: [Synth 8-3331] design player has unconnected port inx[25]
+WARNING: [Synth 8-3331] design player has unconnected port inx[24]
+WARNING: [Synth 8-3331] design player has unconnected port inx[23]
+WARNING: [Synth 8-3331] design player has unconnected port inx[22]
+WARNING: [Synth 8-3331] design player has unconnected port inx[21]
+WARNING: [Synth 8-3331] design player has unconnected port inx[20]
+WARNING: [Synth 8-3331] design player has unconnected port inx[19]
+WARNING: [Synth 8-3331] design player has unconnected port inx[18]
+WARNING: [Synth 8-3331] design player has unconnected port inx[17]
+WARNING: [Synth 8-3331] design player has unconnected port inx[16]
+WARNING: [Synth 8-3331] design player has unconnected port inx[15]
+WARNING: [Synth 8-3331] design player has unconnected port inx[14]
+WARNING: [Synth 8-3331] design player has unconnected port inx[13]
+WARNING: [Synth 8-3331] design player has unconnected port inx[12]
+WARNING: [Synth 8-3331] design player has unconnected port inx[11]
+WARNING: [Synth 8-3331] design player has unconnected port iny[31]
+WARNING: [Synth 8-3331] design player has unconnected port iny[30]
+WARNING: [Synth 8-3331] design player has unconnected port iny[29]
+WARNING: [Synth 8-3331] design player has unconnected port iny[28]
+WARNING: [Synth 8-3331] design player has unconnected port iny[27]
+WARNING: [Synth 8-3331] design player has unconnected port iny[26]
+WARNING: [Synth 8-3331] design player has unconnected port iny[25]
+WARNING: [Synth 8-3331] design player has unconnected port iny[24]
+WARNING: [Synth 8-3331] design player has unconnected port iny[23]
+WARNING: [Synth 8-3331] design player has unconnected port iny[22]
+WARNING: [Synth 8-3331] design player has unconnected port iny[21]
+WARNING: [Synth 8-3331] design player has unconnected port iny[20]
+WARNING: [Synth 8-3331] design player has unconnected port iny[19]
+WARNING: [Synth 8-3331] design player has unconnected port iny[18]
+WARNING: [Synth 8-3331] design player has unconnected port iny[17]
+WARNING: [Synth 8-3331] design player has unconnected port iny[16]
+WARNING: [Synth 8-3331] design player has unconnected port iny[15]
+WARNING: [Synth 8-3331] design player has unconnected port iny[14]
+WARNING: [Synth 8-3331] design player has unconnected port iny[13]
+WARNING: [Synth 8-3331] design player has unconnected port iny[12]
+WARNING: [Synth 8-3331] design player has unconnected port iny[11]
+WARNING: [Synth 8-3331] design player has unconnected port iny[10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1015.785 ; gain = 158.781
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin ply:difficulty to constant 0 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:93]
+WARNING: [Synth 8-3295] tying undriven pin enm1:enemy_type to constant 0 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+WARNING: [Synth 8-3295] tying undriven pin enm1:difficulty to constant 0 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.785 ; gain = 158.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.785 ; gain = 158.781
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 16 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[15] cannot be placed on R2 (IOB_X1Y48) because the pad is already occupied by terminal led_code[15] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:36]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[14] cannot be placed on T1 (IOB_X1Y44) because the pad is already occupied by terminal led_code[14] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:38]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[13] cannot be placed on U1 (IOB_X1Y43) because the pad is already occupied by terminal led_code[13] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:40]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[12] cannot be placed on W2 (IOB_X1Y39) because the pad is already occupied by terminal led_code[12] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:42]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[11] cannot be placed on R3 (IOB_X1Y46) because the pad is already occupied by terminal led_code[11] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:44]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[10] cannot be placed on T2 (IOB_X1Y47) because the pad is already occupied by terminal led_code[10] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:46]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[9] cannot be placed on T3 (IOB_X1Y45) because the pad is already occupied by terminal led_code[9] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:48]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[8] cannot be placed on V2 (IOB_X1Y40) because the pad is already occupied by terminal led_code[8] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:50]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[7] cannot be placed on W13 (IOB_X0Y6) because the pad is already occupied by terminal led_code[7] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:52]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[6] cannot be placed on W14 (IOB_X0Y5) because the pad is already occupied by terminal led_code[6] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:54]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[5] cannot be placed on V15 (IOB_X0Y8) because the pad is already occupied by terminal led_code[5] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:56]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[4] cannot be placed on W15 (IOB_X0Y7) because the pad is already occupied by terminal led_code[4] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:58]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[3] cannot be placed on W17 (IOB_X0Y9) because the pad is already occupied by terminal led_code[3] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:60]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[2] cannot be placed on W16 (IOB_X0Y10) because the pad is already occupied by terminal led_code[2] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:62]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[1] cannot be placed on V16 (IOB_X0Y12) because the pad is already occupied by terminal led_code[1] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:64]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Terminal input_code[0] cannot be placed on V17 (IOB_X0Y11) because the pad is already occupied by terminal led_code[0] possibly due to user constraint [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc:66]
+Finished Parsing XDC File [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 16 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1358.359 ; gain = 501.355
+49 Infos, 71 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1358.359 ; gain = 501.355
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 23 20:57:35 2019...

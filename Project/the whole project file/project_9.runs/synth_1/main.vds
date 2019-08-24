@@ -1,0 +1,874 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Dec 28 14:49:14 2018
+# Process ID: 5232
+# Current directory: C:/Users/egeozanozyedek/Desktop/project_9/project_9.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: C:/Users/egeozanozyedek/Desktop/project_9/project_9.runs/synth_1/main.vds
+# Journal file: C:/Users/egeozanozyedek/Desktop/project_9/project_9.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
+Command: synth_design -top main -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7000 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 356.242 ; gain = 99.609
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:14]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/debounce.vhd:3' bound to instance 'bounce' of component 'debounce' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/debounce.vhd:8]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (1#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/debounce.vhd:8]
+INFO: [Synth 8-3491] module 'vga_main' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:5' bound to instance 'vga' of component 'vga_main' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'vga_main' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:14]
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_sync.vhd:4' bound to instance 'controller' of component 'vga_sync' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_sync.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (2#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_sync.vhd:11]
+WARNING: [Synth 8-549] port width mismatch for port 'hcurrent': port width = 11, actual width = 32 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:19]
+WARNING: [Synth 8-549] port width mismatch for port 'vcurrent': port width = 10, actual width = 32 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:19]
+WARNING: [Synth 8-549] port width mismatch for port 'hcurrent': port width = 32, actual width = 11 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:35]
+WARNING: [Synth 8-549] port width mismatch for port 'vcurrent': port width = 32, actual width = 10 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:35]
+INFO: [Synth 8-3491] module 'level_draw' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:10' bound to instance 'drawer' of component 'level_draw' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'level_draw' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:19]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'divider' of component 'clock_divider' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (3#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:11]
+INFO: [Synth 8-3491] module 'rng' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/rng.vhd:4' bound to instance 'rdm' of component 'rng' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'rng' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/rng.vhd:12]
+WARNING: [Synth 8-6014] Unused sequential element tmp_reg was removed.  [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/rng.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'rng' (4#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/rng.vhd:12]
+INFO: [Synth 8-3491] module 'player' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/player.vhd:7' bound to instance 'ply' of component 'player' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'player' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/player.vhd:17]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'divider0' of component 'clock_divider' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/player.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'player' (5#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/player.vhd:17]
+WARNING: [Synth 8-549] port width mismatch for port 'cxpos': port width = 32, actual width = 11 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:93]
+WARNING: [Synth 8-549] port width mismatch for port 'cypos': port width = 32, actual width = 10 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:93]
+INFO: [Synth 8-3491] module 'enemy' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/enemy.vhd:7' bound to instance 'enm1' of component 'enemy' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'enemy' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/enemy.vhd:14]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'divider' of component 'clock_divider' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/enemy.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'enemy' (6#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/enemy.vhd:14]
+WARNING: [Synth 8-549] port width mismatch for port 'eposx': port width = 32, actual width = 11 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+WARNING: [Synth 8-549] port width mismatch for port 'eposy': port width = 32, actual width = 10 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+INFO: [Synth 8-3491] module 'projectile' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/projectile.vhd:6' bound to instance 'prj' of component 'projectile' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'projectile' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/projectile.vhd:17]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'divider' of component 'clock_divider' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/projectile.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'projectile' (7#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/projectile.vhd:17]
+WARNING: [Synth 8-549] port width mismatch for port 'pposx': port width = 32, actual width = 11 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:96]
+WARNING: [Synth 8-549] port width mismatch for port 'pposy': port width = 32, actual width = 10 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:96]
+WARNING: [Synth 8-6014] Unused sequential element points_reg was removed.  [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:171]
+INFO: [Synth 8-4471] merging register 'reset_e_reg' into 'reset_p_reg' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element reset_e_reg was removed.  [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+WARNING: [Synth 8-3848] Net rgb_o[18] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[17] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[16] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[14] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[13] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[12] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[11] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[10] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[9] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net rgb_o[7] in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:71]
+WARNING: [Synth 8-3848] Net difficulty in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:73]
+WARNING: [Synth 8-3848] Net enemy_type in module/entity level_draw does not have driver. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'level_draw' (8#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'vga_main' (9#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/vga_main.vhd:14]
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/clock_divider.vhd:4' bound to instance 'clk' of component 'clock_divider' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:65]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/decoder.vhd:6' bound to instance 'd_0' of component 'decoder' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'decoder' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/decoder.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (10#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/decoder.vhd:11]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/decoder.vhd:6' bound to instance 'd_1' of component 'decoder' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:67]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/decoder.vhd:6' bound to instance 'd_2' of component 'decoder' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:68]
+INFO: [Synth 8-3491] module 'decoder' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/decoder.vhd:6' bound to instance 'd_3' of component 'decoder' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:69]
+INFO: [Synth 8-3491] module 'ssd_sync' declared at 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/ssd_sync.vhd:4' bound to instance 'sync' of component 'ssd_sync' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'ssd_sync' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/ssd_sync.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'ssd_sync' (11#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/ssd_sync.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'main' (12#1) [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/main.vhd:14]
+WARNING: [Synth 8-3331] design player has unconnected port inx[31]
+WARNING: [Synth 8-3331] design player has unconnected port inx[30]
+WARNING: [Synth 8-3331] design player has unconnected port inx[29]
+WARNING: [Synth 8-3331] design player has unconnected port inx[28]
+WARNING: [Synth 8-3331] design player has unconnected port inx[27]
+WARNING: [Synth 8-3331] design player has unconnected port inx[26]
+WARNING: [Synth 8-3331] design player has unconnected port inx[25]
+WARNING: [Synth 8-3331] design player has unconnected port inx[24]
+WARNING: [Synth 8-3331] design player has unconnected port inx[23]
+WARNING: [Synth 8-3331] design player has unconnected port inx[22]
+WARNING: [Synth 8-3331] design player has unconnected port inx[21]
+WARNING: [Synth 8-3331] design player has unconnected port inx[20]
+WARNING: [Synth 8-3331] design player has unconnected port inx[19]
+WARNING: [Synth 8-3331] design player has unconnected port inx[18]
+WARNING: [Synth 8-3331] design player has unconnected port inx[17]
+WARNING: [Synth 8-3331] design player has unconnected port inx[16]
+WARNING: [Synth 8-3331] design player has unconnected port inx[15]
+WARNING: [Synth 8-3331] design player has unconnected port inx[14]
+WARNING: [Synth 8-3331] design player has unconnected port inx[13]
+WARNING: [Synth 8-3331] design player has unconnected port inx[12]
+WARNING: [Synth 8-3331] design player has unconnected port inx[11]
+WARNING: [Synth 8-3331] design player has unconnected port iny[31]
+WARNING: [Synth 8-3331] design player has unconnected port iny[30]
+WARNING: [Synth 8-3331] design player has unconnected port iny[29]
+WARNING: [Synth 8-3331] design player has unconnected port iny[28]
+WARNING: [Synth 8-3331] design player has unconnected port iny[27]
+WARNING: [Synth 8-3331] design player has unconnected port iny[26]
+WARNING: [Synth 8-3331] design player has unconnected port iny[25]
+WARNING: [Synth 8-3331] design player has unconnected port iny[24]
+WARNING: [Synth 8-3331] design player has unconnected port iny[23]
+WARNING: [Synth 8-3331] design player has unconnected port iny[22]
+WARNING: [Synth 8-3331] design player has unconnected port iny[21]
+WARNING: [Synth 8-3331] design player has unconnected port iny[20]
+WARNING: [Synth 8-3331] design player has unconnected port iny[19]
+WARNING: [Synth 8-3331] design player has unconnected port iny[18]
+WARNING: [Synth 8-3331] design player has unconnected port iny[17]
+WARNING: [Synth 8-3331] design player has unconnected port iny[16]
+WARNING: [Synth 8-3331] design player has unconnected port iny[15]
+WARNING: [Synth 8-3331] design player has unconnected port iny[14]
+WARNING: [Synth 8-3331] design player has unconnected port iny[13]
+WARNING: [Synth 8-3331] design player has unconnected port iny[12]
+WARNING: [Synth 8-3331] design player has unconnected port iny[11]
+WARNING: [Synth 8-3331] design player has unconnected port iny[10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 412.121 ; gain = 155.488
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin ply:difficulty to constant 0 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:93]
+WARNING: [Synth 8-3295] tying undriven pin enm1:enemy_type to constant 0 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+WARNING: [Synth 8-3295] tying undriven pin enm1:difficulty to constant 0 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:94]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 412.121 ; gain = 155.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 412.121 ; gain = 155.488
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 758.762 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 758.762 ; gain = 502.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 758.762 ; gain = 502.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 758.762 ; gain = 502.129
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "xpos" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "xpos" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dir" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "xpos" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "dir" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "xpos" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-4471] merging register 'indicator_reg' into 'enable_prj_reg' [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:154]
+WARNING: [Synth 8-6014] Unused sequential element indicator_reg was removed.  [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/level_draw.vhd:154]
+INFO: [Synth 8-5544] ROM "level" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "bitmap[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bitmap[125]" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 758.762 ; gain = 502.129
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 21    
+	   3 Input     32 Bit       Adders := 4     
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 14    
+	   3 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 12    
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               21 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 12    
+	               11 Bit    Registers := 7     
+	               10 Bit    Registers := 7     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 14    
++---Multipliers : 
+	                32x32  Multipliers := 3     
++---Muxes : 
+	 126 Input    267 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 32    
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 49    
+	   3 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 3     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module rng 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+Module player 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 3     
+	   3 Input     10 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 1     
+Module enemy 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 7     
+	   3 Input     32 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Multipliers : 
+	                32x32  Multipliers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 18    
+Module projectile 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 14    
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+Module level_draw 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 10    
+	   3 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      9 Bit       Adders := 3     
++---Registers : 
+	               21 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 12    
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	 126 Input    267 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+Module ssd_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'speed_reg' and it is trimmed from '32' to '11' bits. [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/player.vhd:54]
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "xpos" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/enemy.vhd:56]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/enemy.vhd:56]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/egeozanozyedek/Desktop/project_9/project_9.srcs/sources_1/new/enemy.vhd:56]
+DSP Report: Generating DSP xpos2, operation Mode is: A*B.
+DSP Report: operator xpos2 is absorbed into DSP xpos2.
+DSP Report: operator xpos2 is absorbed into DSP xpos2.
+DSP Report: Generating DSP xpos2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator xpos2 is absorbed into DSP xpos2.
+DSP Report: operator xpos2 is absorbed into DSP xpos2.
+DSP Report: Generating DSP xpos2, operation Mode is: A*B.
+DSP Report: operator xpos2 is absorbed into DSP xpos2.
+DSP Report: operator xpos2 is absorbed into DSP xpos2.
+DSP Report: Generating DSP xpos2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator xpos2 is absorbed into DSP xpos2.
+DSP Report: operator xpos2 is absorbed into DSP xpos2.
+DSP Report: Generating DSP xpos3, operation Mode is: A*B.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: Generating DSP xpos3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: Generating DSP xpos3, operation Mode is: A*B.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: Generating DSP xpos3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: Generating DSP xpos3, operation Mode is: A*B.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: Generating DSP xpos3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: Generating DSP xpos3, operation Mode is: A*B.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: Generating DSP xpos3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+DSP Report: operator xpos3 is absorbed into DSP xpos3.
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+DSP Report: Generating DSP isInRange1, operation Mode is: (D-A)*B.
+DSP Report: operator isInRange1 is absorbed into DSP isInRange1.
+DSP Report: operator isInRange2 is absorbed into DSP isInRange1.
+DSP Report: Generating DSP isInRange0, operation Mode is: PCIN+(D-A)*B.
+DSP Report: operator isInRange0 is absorbed into DSP isInRange0.
+DSP Report: operator isInRange1 is absorbed into DSP isInRange0.
+DSP Report: operator isInRange2 is absorbed into DSP isInRange0.
+DSP Report: Generating DSP isInRange1, operation Mode is: (D-A)*B.
+DSP Report: operator isInRange1 is absorbed into DSP isInRange1.
+DSP Report: operator isInRange2 is absorbed into DSP isInRange1.
+DSP Report: Generating DSP isInRange0, operation Mode is: PCIN+(D-A)*B.
+DSP Report: operator isInRange0 is absorbed into DSP isInRange0.
+DSP Report: operator isInRange1 is absorbed into DSP isInRange0.
+DSP Report: operator isInRange2 is absorbed into DSP isInRange0.
+DSP Report: Generating DSP isInRange1, operation Mode is: (D-A)*B.
+DSP Report: operator isInRange1 is absorbed into DSP isInRange1.
+DSP Report: operator isInRange2 is absorbed into DSP isInRange1.
+DSP Report: Generating DSP isInRange0, operation Mode is: PCIN+(D-A)*B.
+DSP Report: operator isInRange0 is absorbed into DSP isInRange0.
+DSP Report: operator isInRange1 is absorbed into DSP isInRange0.
+DSP Report: operator isInRange2 is absorbed into DSP isInRange0.
+DSP Report: Generating DSP reset3, operation Mode is: A*B.
+DSP Report: operator reset3 is absorbed into DSP reset3.
+DSP Report: Generating DSP reset2, operation Mode is: PCIN+A*B.
+DSP Report: operator reset2 is absorbed into DSP reset2.
+DSP Report: operator reset3 is absorbed into DSP reset2.
+WARNING: [Synth 8-3331] design player has unconnected port inx[31]
+WARNING: [Synth 8-3331] design player has unconnected port inx[30]
+WARNING: [Synth 8-3331] design player has unconnected port inx[29]
+WARNING: [Synth 8-3331] design player has unconnected port inx[28]
+WARNING: [Synth 8-3331] design player has unconnected port inx[27]
+WARNING: [Synth 8-3331] design player has unconnected port inx[26]
+WARNING: [Synth 8-3331] design player has unconnected port inx[25]
+WARNING: [Synth 8-3331] design player has unconnected port inx[24]
+WARNING: [Synth 8-3331] design player has unconnected port inx[23]
+WARNING: [Synth 8-3331] design player has unconnected port inx[22]
+WARNING: [Synth 8-3331] design player has unconnected port inx[21]
+WARNING: [Synth 8-3331] design player has unconnected port inx[20]
+WARNING: [Synth 8-3331] design player has unconnected port inx[19]
+WARNING: [Synth 8-3331] design player has unconnected port inx[18]
+WARNING: [Synth 8-3331] design player has unconnected port inx[17]
+WARNING: [Synth 8-3331] design player has unconnected port inx[16]
+WARNING: [Synth 8-3331] design player has unconnected port inx[15]
+WARNING: [Synth 8-3331] design player has unconnected port inx[14]
+WARNING: [Synth 8-3331] design player has unconnected port inx[13]
+WARNING: [Synth 8-3331] design player has unconnected port inx[12]
+WARNING: [Synth 8-3331] design player has unconnected port inx[11]
+WARNING: [Synth 8-3331] design player has unconnected port iny[31]
+WARNING: [Synth 8-3331] design player has unconnected port iny[30]
+WARNING: [Synth 8-3331] design player has unconnected port iny[29]
+WARNING: [Synth 8-3331] design player has unconnected port iny[28]
+WARNING: [Synth 8-3331] design player has unconnected port iny[27]
+WARNING: [Synth 8-3331] design player has unconnected port iny[26]
+WARNING: [Synth 8-3331] design player has unconnected port iny[25]
+WARNING: [Synth 8-3331] design player has unconnected port iny[24]
+WARNING: [Synth 8-3331] design player has unconnected port iny[23]
+WARNING: [Synth 8-3331] design player has unconnected port iny[22]
+WARNING: [Synth 8-3331] design player has unconnected port iny[21]
+WARNING: [Synth 8-3331] design player has unconnected port iny[20]
+WARNING: [Synth 8-3331] design player has unconnected port iny[19]
+WARNING: [Synth 8-3331] design player has unconnected port iny[18]
+WARNING: [Synth 8-3331] design player has unconnected port iny[17]
+WARNING: [Synth 8-3331] design player has unconnected port iny[16]
+WARNING: [Synth 8-3331] design player has unconnected port iny[15]
+WARNING: [Synth 8-3331] design player has unconnected port iny[14]
+WARNING: [Synth 8-3331] design player has unconnected port iny[13]
+WARNING: [Synth 8-3331] design player has unconnected port iny[12]
+WARNING: [Synth 8-3331] design player has unconnected port iny[11]
+WARNING: [Synth 8-3331] design player has unconnected port iny[10]
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[11]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[12]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[13]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[14]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[15]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[16]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[17]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[18]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[19]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[20]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[21]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[22]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[23]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[24]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[25]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[26]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[27]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[28]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[29]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[30]' (FD) to 'vga/drawer/enm1/speed_reg[31]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[31]' (FD) to 'vga/drawer/enm1/speed_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/inex_reg[0]' (FDRE) to 'vga/drawer/iney_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/inex_reg[9]' (FDSE) to 'vga/drawer/iney_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/inex_reg[8]' (FDRE) to 'vga/drawer/iney_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/inex_reg[7]' (FDSE) to 'vga/drawer/iney_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/inex_reg[6]' (FDRE) to 'vga/drawer/iney_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/inex_reg[5]' (FDRE) to 'vga/drawer/iney_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/inex_reg[4]' (FDSE) to 'vga/drawer/iney_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/inex_reg[1]' (FDRE) to 'vga/drawer/iney_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/inex_reg[2]' (FDRE) to 'vga/drawer/iney_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/inex_reg[3]' (FDSE) to 'vga/drawer/iney_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[10]' (FD) to 'vga/drawer/enm1/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/inex_reg[10]' (FDRE) to 'vga/drawer/iney_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/iney_reg[0]' (FDRE) to 'vga/drawer/iney_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/iney_reg[8]' (FDRE) to 'vga/drawer/iney_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/iney_reg[7]' (FDSE) to 'vga/drawer/iney_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/iney_reg[6]' (FDSE) to 'vga/drawer/iney_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/iney_reg[5]' (FDRE) to 'vga/drawer/iney_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/iney_reg[4]' (FDSE) to 'vga/drawer/iney_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga/drawer /\iney_reg[1] )
+INFO: [Synth 8-3886] merging instance 'vga/drawer/iney_reg[2]' (FDSE) to 'vga/drawer/iney_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/iney_reg[3]' (FDSE) to 'vga/drawer/iney_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[0]' (FD) to 'vga/drawer/enm1/speed_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/drawer /enm1/\speed_reg[1] )
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[2]' (FD) to 'vga/drawer/enm1/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[3]' (FD) to 'vga/drawer/enm1/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[4]' (FD) to 'vga/drawer/enm1/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[5]' (FD) to 'vga/drawer/enm1/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[6]' (FD) to 'vga/drawer/enm1/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[7]' (FD) to 'vga/drawer/enm1/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/enm1/speed_reg[8]' (FD) to 'vga/drawer/enm1/speed_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga/drawer /enm1/\speed_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/drawer /\iney_reg[9] )
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incx_reg[0]' (FDRE) to 'vga/drawer/incy_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incx_reg[1]' (FDSE) to 'vga/drawer/incy_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incx_reg[2]' (FDSE) to 'vga/drawer/incy_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incx_reg[3]' (FDSE) to 'vga/drawer/incy_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incx_reg[4]' (FDSE) to 'vga/drawer/incy_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incx_reg[5]' (FDRE) to 'vga/drawer/incy_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incx_reg[6]' (FDRE) to 'vga/drawer/incy_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incx_reg[7]' (FDSE) to 'vga/drawer/incy_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incx_reg[8]' (FDRE) to 'vga/drawer/incy_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incx_reg[9]' (FDSE) to 'vga/drawer/incy_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/ply/speed_reg[10]' (FD) to 'vga/drawer/ply/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incx_reg[10]' (FDSE) to 'vga/drawer/incy_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/ply/speed_reg[0]' (FD) to 'vga/drawer/ply/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incy_reg[0]' (FDRE) to 'vga/drawer/incy_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incy_reg[1]' (FDRE) to 'vga/drawer/incy_reg[5]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incy_reg[2]' (FDSE) to 'vga/drawer/incy_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incy_reg[3]' (FDSE) to 'vga/drawer/incy_reg[4]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incy_reg[4]' (FDSE) to 'vga/drawer/incy_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incy_reg[5]' (FDRE) to 'vga/drawer/incy_reg[8]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incy_reg[6]' (FDSE) to 'vga/drawer/incy_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incy_reg[7]' (FDSE) to 'vga/drawer/incy_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incy_reg[8]' (FDRE) to 'vga/drawer/doorx_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/ply/speed_reg[1]' (FD) to 'vga/drawer/ply/speed_reg[9]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/drawer /ply/\speed_reg[2] )
+INFO: [Synth 8-3886] merging instance 'vga/drawer/ply/speed_reg[3]' (FD) to 'vga/drawer/ply/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/ply/speed_reg[4]' (FD) to 'vga/drawer/ply/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/ply/speed_reg[5]' (FD) to 'vga/drawer/ply/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/ply/speed_reg[6]' (FD) to 'vga/drawer/ply/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/ply/speed_reg[7]' (FD) to 'vga/drawer/ply/speed_reg[9]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/ply/speed_reg[8]' (FD) to 'vga/drawer/ply/speed_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga/drawer /ply/\speed_reg[9] )
+INFO: [Synth 8-3886] merging instance 'vga/drawer/incy_reg[9]' (FDSE) to 'vga/drawer/doorx_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doorx_reg[0]' (FDRE) to 'vga/drawer/doorx_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doorx_reg[1]' (FDRE) to 'vga/drawer/doorx_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doorx_reg[9]' (FDRE) to 'vga/drawer/doorx_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doorx_reg[8]' (FDSE) to 'vga/drawer/doorx_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doorx_reg[7]' (FDRE) to 'vga/drawer/doorx_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doorx_reg[4]' (FDRE) to 'vga/drawer/doorx_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doorx_reg[3]' (FDSE) to 'vga/drawer/doorx_reg[5]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doorx_reg[2]' (FDRE) to 'vga/drawer/doory_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doorx_reg[5]' (FDSE) to 'vga/drawer/doorx_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doorx_reg[6]' (FDSE) to 'vga/drawer/doorx_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doorx_reg[10]' (FDSE) to 'vga/drawer/doory_reg[0]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doory_reg[0]' (FDSE) to 'vga/drawer/doory_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doory_reg[8]' (FDSE) to 'vga/drawer/doory_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doory_reg[7]' (FDRE) to 'vga/drawer/doory_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doory_reg[6]' (FDRE) to 'vga/drawer/doory_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doory_reg[5]' (FDRE) to 'vga/drawer/doory_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doory_reg[4]' (FDSE) to 'vga/drawer/doory_reg[2]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/drawer /\doory_reg[2] )
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doory_reg[1]' (FDRE) to 'vga/drawer/doory_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/doory_reg[3]' (FDRE) to 'vga/drawer/doory_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga/drawer /\doory_reg[9] )
+INFO: [Synth 8-3886] merging instance 'vga/drawer/rgb_o_reg[0][0]' (FDRE) to 'vga/drawer/rgb_o_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'vga/drawer/rgb_o_reg[1][0]' (FDRE) to 'vga/drawer/rgb_o_reg[1][10]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga/drawer /\rgb_o_reg[19][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga/drawer /\rgb_o_reg[2][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga/drawer /\rgb_o_reg[3][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga/drawer /\rgb_o_reg[4][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga/drawer /\rgb_o_reg[5][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\vga/drawer /\rgb_o_reg[6][10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/drawer /\rgb_o_reg[2][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/drawer /\rgb_o_reg[3][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/drawer /\rgb_o_reg[4][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/drawer /\rgb_o_reg[5][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/drawer /\rgb_o_reg[6][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/drawer /\rgb_o_reg[15][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/drawer /\rgb_o_reg[19][11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\vga/drawer /\rgb_o_reg[20][11] )
+WARNING: [Synth 8-3332] Sequential element (out_signal_reg) is unused and will be removed from module clock_divider.
+WARNING: [Synth 8-3332] Sequential element (speed_reg[9]) is unused and will be removed from module player.
+WARNING: [Synth 8-3332] Sequential element (speed_reg[2]) is unused and will be removed from module player.
+WARNING: [Synth 8-3332] Sequential element (speed_reg[9]) is unused and will be removed from module enemy.
+WARNING: [Synth 8-3332] Sequential element (speed_reg[1]) is unused and will be removed from module enemy.
+WARNING: [Synth 8-3332] Sequential element (enemy_hp_reg[2]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (enemy_hp_reg[1]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[20][11]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[19][11]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[19][7]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[15][11]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[6][11]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[6][10]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[5][11]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[5][10]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[4][11]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[4][10]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[3][11]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[3][10]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[2][11]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (rgb_o_reg[2][10]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (iney_reg[1]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (iney_reg[9]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (doory_reg[2]) is unused and will be removed from module level_draw.
+WARNING: [Synth 8-3332] Sequential element (doory_reg[9]) is unused and will be removed from module level_draw.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 758.762 ; gain = 502.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|level_draw  | bitmap[89] | 128x500       | LUT            | 
+|level_draw  | bitmap[89] | 128x500       | LUT            | 
++------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|enemy       | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|enemy       | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|enemy       | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|enemy       | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|enemy       | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|enemy       | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|enemy       | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|enemy       | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|enemy       | A*B            | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|enemy       | (PCIN>>17)+A*B | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|enemy       | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|enemy       | (PCIN>>17)+A*B | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|level_draw  | (D-A)*B        | 11     | 12     | -      | 11     | 24     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|level_draw  | PCIN+(D-A)*B   | 10     | 11     | -      | 10     | 24     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|level_draw  | (D-A)*B        | 11     | 12     | -      | 11     | 24     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|level_draw  | PCIN+(D-A)*B   | 10     | 11     | -      | 10     | 24     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|level_draw  | (D-A)*B        | 11     | 12     | -      | 11     | 24     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|level_draw  | PCIN+(D-A)*B   | 10     | 11     | -      | 10     | 24     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|level_draw  | A*B            | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|level_draw  | PCIN+A*B       | 12     | 12     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 801.262 ; gain = 544.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 868.656 ; gain = 612.023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 874.477 ; gain = 617.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 874.477 ; gain = 617.844
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 874.477 ; gain = 617.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 874.477 ; gain = 617.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 874.477 ; gain = 617.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 874.477 ; gain = 617.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 874.477 ; gain = 617.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |CARRY4    |   463|
+|3     |DSP48E1   |    11|
+|4     |DSP48E1_1 |     6|
+|5     |LUT1      |   400|
+|6     |LUT2      |   854|
+|7     |LUT3      |   196|
+|8     |LUT4      |   419|
+|9     |LUT5      |   236|
+|10    |LUT6      |   478|
+|11    |MUXF7     |    24|
+|12    |MUXF8     |     1|
+|13    |FDRE      |   403|
+|14    |FDSE      |    35|
+|15    |IBUF      |    22|
+|16    |OBUF      |    41|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------+----------------+------+
+|      |Instance         |Module          |Cells |
++------+-----------------+----------------+------+
+|1     |top              |                |  3592|
+|2     |  bounce         |debounce        |    44|
+|3     |  clk            |clock_divider   |    67|
+|4     |  sync           |ssd_sync        |    21|
+|5     |  vga            |vga_main        |  3378|
+|6     |    controller   |vga_sync        |   955|
+|7     |    drawer       |level_draw      |  2422|
+|8     |      enm1       |enemy           |   931|
+|9     |        divider  |clock_divider_2 |    67|
+|10    |      ply        |player          |   457|
+|11    |        divider0 |clock_divider_1 |    67|
+|12    |      prj        |projectile      |   664|
+|13    |        divider  |clock_divider_0 |    67|
+|14    |      rdm        |rng             |    27|
++------+-----------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 874.477 ; gain = 617.844
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 70 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 874.477 ; gain = 271.203
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 874.477 ; gain = 617.844
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 527 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+198 Infos, 141 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:48 . Memory (MB): peak = 874.477 ; gain = 630.480
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/egeozanozyedek/Desktop/project_9/project_9.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 874.477 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 28 14:50:09 2018...

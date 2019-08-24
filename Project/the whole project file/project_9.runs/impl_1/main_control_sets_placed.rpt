@@ -1,0 +1,94 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Dec 28 14:51:12 2018
+| Host         : EGEOZANZYED145A running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    24 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            2 |
+|      4 |            1 |
+|      6 |            2 |
+|      8 |            2 |
+|     12 |            1 |
+|     14 |            1 |
+|    16+ |           15 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             376 |           69 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              72 |           20 |
+| Yes          | No                    | No                     |             360 |           73 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              92 |           12 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+------------------------------------+------------------------------------+------------------+----------------+
+|         Clock Signal         |            Enable Signal           |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++------------------------------+------------------------------------+------------------------------------+------------------+----------------+
+|  clock_IBUF_BUFG             |                                    | vga/controller/vsync0              |                1 |              2 |
+|  clock_IBUF_BUFG             |                                    | vga/controller/hsync0              |                1 |              2 |
+|  drawer/enm1/clk_out         |                                    |                                    |                1 |              4 |
+|  clk/out_signal              |                                    |                                    |                1 |              6 |
+|  drawer/prj/clk_out          |                                    |                                    |                2 |              6 |
+|  clock_IBUF_BUFG             | vga/drawer/ply/E[0]                |                                    |                2 |              8 |
+|  drawer/prj/clk_out          | vga/drawer/prj/dir0                |                                    |                1 |              8 |
+|  clock_IBUF_BUFG             | vga/drawer/eqOp                    |                                    |                4 |             12 |
+|  vga/drawer/ply/divider0/CLK |                                    |                                    |                5 |             14 |
+|  vga/drawer/ply/divider0/CLK | vga/drawer/ply/ypos[9]_i_1_n_0     |                                    |                3 |             20 |
+|  clock_IBUF_BUFG             | vga/controller/hpos[10]_i_1_n_0    | vga/controller/vpos                |                2 |             20 |
+|  clk/out_signal              |                                    | sync/count[2]                      |                7 |             22 |
+|  vga/drawer/ply/divider0/CLK | vga/drawer/ply/xpos[10]_i_1_n_0    |                                    |                4 |             22 |
+|  clock_IBUF_BUFG             |                                    | vga/controller/hpos[10]_i_1_n_0    |                4 |             22 |
+|  clock_IBUF_BUFG             |                                    | vga/drawer/draw_reg_n_0_[20]       |                7 |             24 |
+|  drawer/prj/clk_out          | vga/drawer/prj/xpos[11]_i_1__0_n_0 |                                    |                6 |             24 |
+|  clock_IBUF_BUFG             | vga/drawer/ply/random_reg[0]       | vga/drawer/ply/random_reg[15]      |                4 |             32 |
+|  clock_IBUF_BUFG             | vga/drawer/en                      |                                    |                8 |             32 |
+|  drawer/prj/clk_out          | vga/drawer/prj/xpos[11]_i_1__0_n_0 | vga/drawer/prj/xpos[31]_i_1__0_n_0 |                6 |             40 |
+|  clock_IBUF_BUFG             | vga/drawer/tposy[9]_i_1_n_0        |                                    |                8 |             42 |
+|  drawer/enm1/clk_out         | vga/drawer/enm1/xpos[31]_i_1_n_0   |                                    |               12 |             64 |
+|  drawer/enm1/clk_out         | vga/drawer/enm1/ypos[31]_i_1_n_0   |                                    |               13 |             64 |
+|  drawer/prj/clk_out          | vga/drawer/prj/ypos[31]_i_1__0_n_0 |                                    |               12 |             64 |
+|  clock_IBUF_BUFG             |                                    |                                    |               60 |            346 |
++------------------------------+------------------------------------+------------------------------------+------------------+----------------+
+
+

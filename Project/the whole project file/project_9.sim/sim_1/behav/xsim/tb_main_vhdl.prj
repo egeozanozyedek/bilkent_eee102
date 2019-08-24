@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/new/clock_divider.vhd" \
+"../../../../project_1.srcs/sources_1/new/decoder.vhd" \
+"../../../../project_1.srcs/sources_1/new/game.vhd" \
+"../../../../project_1.srcs/sources_1/new/main.vhd" \
+"../../../../project_1.srcs/sources_1/new/ssd_sync.vhd" \
+"../../../../project_1.srcs/sim_1/new/tb_main.vhd" \
+
+# Do not sort compile order
+nosort
